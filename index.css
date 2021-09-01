@@ -1,0 +1,135 @@
+:root {
+  --main-color-1: #f15025;
+  --main-color-2: #fff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://github.com/JS-Beginners/background-image-slider-project/blob/main/img/contBcg-1.jpeg?raw=true');
+  background-size: cover;
+  font-family: arial;
+  font-size: 1.6rem;
+  height: 100vh;
+  color: #fff;
+}
+
+h4 {
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--main-color-1);
+}
+
+h1 {
+  font-size: 2.3rem;
+  text-align: center;
+  color: var(--main-color-2);
+  margin-top: -22px;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 600px;
+  border: 1px solid #fff;
+  margin-top: 80px;
+  padding: 1rem;
+}
+
+.title {
+  margin-top: -60px;
+}
+
+#customer-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 100px;
+  background-size: cover;
+  margin-top: -70px;
+}
+
+#customer-name {
+  margin-top: 20px;
+}
+
+#customer-rating {
+  margin-top: -18px;
+  color: var(--main-color-1);
+}
+
+.fa-star {
+  margin: 0 0.3rem;
+}
+
+#customer-review {
+  font-size: 1rem;
+  text-align: center;
+  margin: 15px 10px;
+}
+
+#quote {
+  color: var(--main-color-1);
+  margin: 15px 0;
+}
+
+.btn {
+  padding: 0.6rem;
+  border: 0.1rem solid var(--main-color-1);
+  border-radius: 50%;
+  color: var(--main-color-1);
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: var(--main-color-1);
+  color: #fff;
+  transition: all 1s ease-in-out;
+}
+
+.btn-left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-left: -10px;
+  transform: translate(-120%, -50%);
+}
+
+.btn-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-right: -10px;
+  transform: translate(120%, -50%);
+}
+
+@media (max-width: 780px) {
+  .wrapper {
+    width: 500px;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    width: 450px;
+  }
+}
+
+@media (max-width: 620px) {
+  .wrapper {
+    width: 400px;
+  }
+}
+
+@media (max-width: 570px) {
+  .wrapper {
+    width: 340px;
+  }
+}
