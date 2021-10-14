@@ -2,7 +2,7 @@
   const customers = [];
   const customerImage = document.querySelector('#customer-image');
   const customerName = document.querySelector('#customer-name');
-  const customerRating = document.querySelector('#customer-rating');
+  let customerRating = document.querySelector('#customer-rating');
   const customerReview = document.querySelector('#customer-review');
   const buttonLeft = document.querySelector('.btn-left');
   const buttonRight = document.querySelector('.btn-right');
